@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+    /* font-family: "Nunito", sans-serif; */
+    /* font-family: "Roboto", sans-serif; */
+}
+.herosection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.69);
+    background-blend-mode: overlay;
+}
+.herosection .navbar-p {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.69);
+}
+.navLeft-p h1 {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.navRight-p .menubtn {
+    font-size: 25px;
+    color: #fff;
+}
+.navRight-p .menubtn {
+    font-size: 25px;
+    color: #fff;
+}
+.navRight-p .navlinks-p {
+    position: relative;
+}
+.navRight-p .navlinks-p::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #E43C5C;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navRight-p .navlinks-p:hover::before {
+    width: 100%;
+    transition: all 0.3s ease-in-out 0s;
+}
+/* .mobilenav{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    width: 98vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    position: fixed;
+    top: 60px;
+    left: 1vw;
+    border-radius: 5px;
+}
+#M-Home {
+    color: #E43C5C;
+}
+.mobilenav a {
+    color: rgb(86, 84, 84);
+} */
+/* .herosub {
+    height: 83vh;
+} */
+.herosub h2 {
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.herosub p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn {
+    font-family: "Roboto", sans-serif;
+    border: 2px solid #8B898B;
+    width: 183px;
+    height: 41px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+.btn:hover {
+    background-color: #E43C5C;
+    color: #fff;
+}
+
+/* SECTION-2 */
+.about {
+    width: 100%;
+    padding: 60px 0;
+}
+.about .section-title {
+    gap: 12px;
+}
+.section-title h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    margin: 0;
+    border-radius: 50px;
+    background-color: #FCEBEE;
+    color: #E43C5C;
+}
+.section-title p {
+    margin: 10px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    color: #493C3E;
+}
+.section-title span {
+    color: #E43C5C;
+}
+.about .content h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #493C3E;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 30px;
+}
+.about .content p {
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #444444;
+}
+.about .content .about-btn {
+    border: 2px solid #E43C5C;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #E43C5C;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease-in-out 0s;
+}
+.about .content .about-btn:hover {
+    color: #fff;
+    background-color: #E43C5C;
+    transition: 0.3s ease-in-out 0s;
+}
+.about .content .about-btn iconify-icon {
+    font-size: 18px;
+    padding-left: 3px;
+}
+.about .icon-box iconify-icon {
+    font-size: 40px;
+    color: #E43C5C;
+    margin-bottom: 10px;
+}
+.about .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+.about .icon-box h4 a {
+    color: #493c3e;
+    transition: 0.3s;
+}
+.about .icon-box h4 a:hover {
+    color: #E43C5C;
+}
+.about .icon-box p {
+    font-size: 15px;
+    color: #4444449a;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+}
+/* SECTION-2 END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) {
+    .navbar-p {
+        height: 75px;
+    }
+}
+@media (min-width: 768px) {
+    .herosub h2 {
+        font-size: 48px;
+    }
+    .herosub p {
+        font-size: 24px;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar-p {
+        height: 90px;
+    }
+    .navbar-p .navRight-p {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+        gap: 30px;
+    }
+}
