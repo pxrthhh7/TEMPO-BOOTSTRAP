@@ -18,6 +18,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
     background-color: rgba(0, 0, 0, 0.69);
 }
 .navLeft-p h1 {
@@ -97,6 +98,7 @@
     border-radius: 50px;
     color: #fff;
     font-size: 14px;
+    letter-spacing: 1px;
 }
 .btn:hover {
     background-color: #E43C5C;
@@ -169,9 +171,11 @@
     margin-bottom: 10px;
 }
 .about .icon-box h4 {
+    font-family: "Nunito", sans-serif;
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 10px 0;
+
 }
 .about .icon-box h4 a {
     color: #493c3e;
@@ -187,20 +191,6 @@
     font-family: "Roboto", sans-serif;
 }
 /* SECTION-2 END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 0px) {
     .navbar-p {
