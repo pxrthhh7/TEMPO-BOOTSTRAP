@@ -190,6 +190,9 @@
     margin-bottom: 0;
     font-family: "Roboto", sans-serif;
 }
+/* SECTION-2 END */
+
+/* SECTION 3 */
 .services {
     padding: 60px 0;
 }
@@ -218,29 +221,78 @@
     font-family: "Roboto", sans-serif;
     margin-bottom: 0;
 }
-.services .service-item {
-    
+/* SECTION 3 END */
+
+/* SECTION 4 */
+.features {
+    padding: 0 0 60px 0;
 }
+.features .features-item {
+    border: 1px solid #44444428;
+    padding: 20px;
+    transition: 0.3s;
+    gap: 10px;
+}
+.features .features-item:hover {
+    border: 1px solid #E43C5C;
+}
+.features .features-item iconify-icon {
+    font-size: 32px;
+}
+.features .features-item h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.features .features-item h3 a {
+    color: #493c3e;
+    transition: 0.3s;
+}
+.features .features-item:hover h3 a {
+    color: #E43C5C;
+}
+/* SECTION 4 END */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SECTION-2 END */
+/* SECTION 5 */
+.call-to-action {
+    padding: 80px 0;
+    background-image: url(Assets/cta-bg.jpg);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.488);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+}
+.call-to-action h3 {
+    font-family: "Nunito", sans-serif; 
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+}
+.call-to-action p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+.call-to-action .cta-btn {
+    font-family: "Nunito", sans-serif; 
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    margin: 10px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.call-to-action .cta-btn:hover {
+    background-color: #E43C5C;
+    color: #fff;
+    border: 2px solid #E43C5C;
+}
+/* SECTION 5 END */
 
 @media (min-width: 0px) {
     .navbar-p {
