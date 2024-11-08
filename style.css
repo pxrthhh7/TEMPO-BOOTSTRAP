@@ -294,6 +294,29 @@
 }
 /* SECTION 5 END */
 
+/* SECTION 6 */
+.portfolio {
+    padding: 60px 0;
+}
+.portfolio .portfolio-filters li {
+    cursor: pointer;
+    padding: 8px 20px 10px 20px;
+    margin: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    transition: all 0.3s ease-in-out;
+    font-family: "Nunito", sans-serif;
+}
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active
+{
+    color: #fff;
+    background-color: #E43C5C;
+}
+/* SECTION 6 END */
+
 @media (min-width: 0px) {
     .navbar-p {
         height: 75px;
