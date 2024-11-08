@@ -190,6 +190,56 @@
     margin-bottom: 0;
     font-family: "Roboto", sans-serif;
 }
+.services {
+    padding: 60px 0;
+}
+.services .service-item {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0 25px 0;
+    padding: 50px 30px;
+}
+.service-item iconify-icon {
+    color: #E43C5C;
+    font-size: 40px;
+    margin-bottom:  10px;
+}
+.service-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-family: "Nunito", sans-serif;
+}
+.service-item h4 a {
+    color: #493C3E;
+    transition: ease-in-out 0.3s;
+}
+.service-item p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0;
+}
+.services .service-item {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SECTION-2 END */
 
 @media (min-width: 0px) {
