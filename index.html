@@ -51,17 +51,16 @@
     <!-- HEROSECTION -->
     <div class="herosection d-flex flex-column justify-content-center">
       <!-- NAVBAR -->
-      <div class="row navbar-p m-0 ps-2 pe-4 d-flex px-xl-5">
+      <div class="row navbar-p m-0 ps-2 pe-4 d-flex px-xl-5 z-2">
         <div class="col-6 col-xl-3 navLeft-p p-0 d-flex align-items-center ps-xl-4">
           <a class="text-decoration-none" href="#">
             <h1 class="m-0">TEMPO</h1>
           </a>
         </div>
         <div class="col-6 col-xl-9 navRight-p p-0 d-flex align-items-center justify-content-end pe-xl-5">
-          <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Home</a>
+          <a class="navlinks-ph text-decoration-none text-white d-none d-xl-flex" href="#">Home</a>
           <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">About</a>
           <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Services</a>
-          <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Portfolio</a>
           <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Team</a>
           <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Blog</a>
           <div class="navlinks-p nav-item dropdown d-none d-xl-flex">
@@ -78,34 +77,38 @@
             </div>
           </div>
           <a class="navlinks-p text-decoration-none text-white d-none d-xl-flex" href="#">Contact</a>
-          <iconify-icon class="menubtn d-xl-none" icon="iconoir:menu"></iconify-icon>
+          <iconify-icon id="mnubtn" class="menubtn d-xl-none" icon="iconoir:menu"></iconify-icon>
         </div>
       </div>
-      <!-- NAVBAR END-->
 
       <!-- MOBILE NAV -->
-      <!-- <div class="mobilenav">
-          <a class="text-decoration-none" id="M-Home" href="#">Home</a>
+      <div class="mNav position-fixed z-3">
+        <div class="navClose d-flex justify-content-end align-items-center pe-2">
+          <iconify-icon class="closebtn" icon="gg:close"  style="color: white"></iconify-icon>
+        </div>
+        <div class="navMain d-flex flex-column gap-4 bg-white rounded">
+          <a id="home" class="text-decoration-none" href="#">Home</a>
           <a class="text-decoration-none" href="#">About</a>
           <a class="text-decoration-none" href="#">Services</a>
-          <a class="text-decoration-none" href="#">Portfolio</a>
           <a class="text-decoration-none" href="#">Team</a>
           <a class="text-decoration-none" href="#">Blog</a>
-          <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-decoration-none text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown 
+          <a class="nav-link d-flex align-items-center dropdown-toggle text-decoration-none" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu mt-2">
               <a class="dropdown-item" href="#">Dropdown 1</a>
               <a class="dropdown-item" href="#">Dropdown 2</a>
               <a class="dropdown-item" href="#">Dropdown 3</a>
               <a class="dropdown-item" href="#">Dropdown 4</a>
               <a class="dropdown-item" href="#">Dropdown 5</a>
             </div>
-          </div>
-          <a class="text-decoration-none" href="#">Contact</a>
-       </div> -->
+            <a class="text-decoration-none" href="#">Contact</a>
+        </div>
+      </div>
       <!-- MOBILE NAV END -->
+
+      <!-- NAVBAR END-->
       <div class="row herosub m-0 p-0 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-8 p-0 m-0 d-flex flex-column align-items-center">
           <h2 class="m-0 text-white">Welcome to Tempo</h2>
@@ -321,115 +324,6 @@
     <!-- SECTION 5 END -->
 
     <!-- SECTION 6 -->
-    <section class="portfolio">
-      <div class="container section-title pb-5 d-flex flex-column align-items-center">
-        <h2>PORTFOLIO</h2>
-        <p>Check Our <span>Portfolio</span></p>
-      </div>
-      <div class="container d-flex flex-column align-items-center">
-        <ul class="portfolio-filters d-flex gap-1" type="none">
-          <li class="filter-active">All</li>
-          <li>App</li>
-          <li>Card</li>
-          <li>Web</li>
-        </ul>
-        <div class="row gy-4 border border-primary">
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-1.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Product 1</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-2.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Branding 1</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-3.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-4.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Product 2</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-5.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Branding 2</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-6.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-7.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Product 3</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-8.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item border border-black">
-            <img src="Assets/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Branding 3</h4>
-              <p>Lorem ipsum, dolor sit</p>
-              <a href="Assets/masonry-portfolio-9.jpg" class="preview-link"><iconify-icon
-                  icon="bi:zoom-in"></iconify-icon></a>
-              <a href="#" class="details-link"><iconify-icon icon="bi:link-45deg"></iconify-icon></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION 6 END -->
-
-    <!-- SECTION 7 -->
     <section class="pricing">
       <div class="container section-title d-flex flex-column align-items-center" data-aos="fade-up">
         <h2>PRICING</h2>
@@ -542,10 +436,10 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 7 END -->
+    <!-- SECTION 6 END -->
 
-    <!-- SECTION 8 -->
-    <!-- <section class="faq">
+    <!-- SECTION 7 -->
+    <section class="faq">
       <div class="container section-title d-flex flex-column align-items-center">
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>Section Title <span>Direda Flowed</span></p>
@@ -557,7 +451,8 @@
               <div class="faq-item">
                 <h3>Non consectetur a erat nam at lectus urna duis?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                 </div>
                 <iconify-icon class="faq-toggle" icon="bi:chevron-right"></iconify-icon>
               </div>
@@ -565,10 +460,10 @@
           </div>
         </div>
       </div>
-     </section> -->
-    <!-- SECTION 8 END -->
+    </section>
+    <!-- SECTION 7 END -->
 
-    <!-- SECTION 9 -->
+    <!-- SECTION 8 -->
     <section class="team">
       <div class="container section-title d-flex flex-column align-items-center" data-aos="fade-up">
         <h2>Team</h2>
@@ -647,9 +542,9 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 9 END -->
+    <!-- SECTION 8 END -->
 
-    <!-- SECTION 10 -->
+    <!-- SECTION 9 -->
     <section class="team-2">
       <div class="container section-title d-flex flex-column align-items-center" data-aos="fade-up">
         <h2>Team</h2>
@@ -728,9 +623,9 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 10 END -->
+    <!-- SECTION 9 END -->
 
-    <!-- SECTION 11 -->
+    <!-- SECTION 10 -->
     <section class="contact">
       <div class="container section-title d-flex flex-column justify-content-center align-items-center text-center"
         data-aos="fade-up">
@@ -791,7 +686,7 @@
         </div>
       </div>
     </section>
-    <!-- SECTION 11 END -->
+    <!-- SECTION 10 END -->
 
     <!-- FOOTER -->
     <footer class="footer bg-black">
@@ -862,8 +757,29 @@
     crossorigin="anonymous"></script>
 </body>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
   AOS.init();
+
+  $(document).ready(function () {
+    $(".mNav").hide()
+    $("#mnubtn").click(function() {
+      $("#mnubtn").hide()
+      $(".mNav").show()
+    })
+    $(".closebtn").click(function() {
+      $("#mnubtn").show()
+      $(".mNav").hide()
+    })
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 90) {
+        $('.navbar-p').addClass('scrolled');
+      } else {
+        $('.navbar-p').removeClass('scrolled');
+      }
+    });
+  })
 </script>
 
 </html>
