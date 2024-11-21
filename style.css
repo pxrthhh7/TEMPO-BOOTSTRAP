@@ -442,31 +442,91 @@
 /* SECTION 6 END */
 
 /* SECTION 7 */
-.faq {
-    padding: 60px 0;
-}
-.faq .faq-item {
+.faq .faq-container .faq-item {
+    background-color: #ffffff;
+    position: relative;
     padding: 20px;
     margin-bottom: 15px;
+    border: 1px solid #E3E3E3;
     border-radius: 5px;
-    border: 1px solid color-mix(in srgb,#444444,transparent 85%);
-    position: relative;
+    overflow: hidden;
 }
-.faq .faq-item h3 {
-    font-size: 16px;
+
+.faq .section-title {
+    margin-bottom: 50px;
+}
+.faq .faq-container .faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
     font-weight: 600;
+    font-size: 16px;
     line-height: 24px;
     margin: 0 30px 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-.faq .faq-item .faq-toggle {
+
+.faq .faq-container .faq-item h3 .num {
+    color: #e43c5c;
+    padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+    color: #e43c5c;
+}
+
+.faq .faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 16px;
-    line-height: 0px;
+    line-height: 0;
     transition: 0.3s;
     cursor: pointer;
 }
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+    color: #e43c5c;
+}
+
+.faq .faq-container .faq-active {
+    background-color: rgba(228, 60, 92, 0.03);
+    border-color: rgba(228, 60, 92, 0.2);
+}
+
+.faq .faq-container .faq-active h3 {
+    color: #e43c5c;
+}
+
+.faq .faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+    color: #e43c5c;
+}
+
 /* SECTION 7 END */
 
 /* SECTION 8 */
